@@ -1,7 +1,7 @@
 {
   "name": "homebot",
   "version": "1.0.0",
-  "description": "HomeBot",
+  "description": "HomeBot is a bot for your home :)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
