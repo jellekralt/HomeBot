@@ -1,0 +1,20 @@
+{
+  "name": "homebot",
+  "version": "1.0.0",
+  "description": "HomeBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jelle Kralt <jelle@jellekralt.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^2.3.0",
+    "botkit": "^0.1.1",
+    "chokidar": "^1.4.3",
+    "lodash": "^4.11.1",
+    "moment": "^2.13.0",
+    "pdf-text": "^0.4.0",
+    "witbot": "^2.1.0"
+  }
+}

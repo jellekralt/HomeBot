@@ -1,0 +1,12 @@
+{
+  "slack": {
+    "token": "SLACK-API-TOKEN"
+  },
+  "wit": {
+    "token": "WIT-AI-TOKEN"
+  },
+  "documents": {
+    "inbox": "/path/to/inbox",
+    "storage": "/path/to/document/storage"
+  }
+}
