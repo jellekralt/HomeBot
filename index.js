@@ -8,9 +8,13 @@ var interact = Interact.createClient({
     witToken: config.wit.token
 });
 
-var documentScanner = new DocumentScanner();
+var documentScanner = new DocumentScanner({
+    interact: interact
+});
 
 // Start the interaction service
-interact.start();
-// Start listening for scanned documents
-documentScanner.start();
+interact.start(function() {
+    // Start listening for scanned documents
+    documentScanner.start();
+});
+
