@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^2.3.0",
-    "botkit": "^0.1.1",
+    "botkit": "^0.2.0",
     "chokidar": "^1.4.3",
     "kue": "^0.10.5",
     "lodash": "^4.11.1",
