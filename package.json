@@ -4,7 +4,8 @@
   "description": "HomeBot is a bot for your home :)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "run": "node index",
+    "test": "./node_modules/mocha/bin/mocha tests/*.js"
   },
   "author": "Jelle Kralt <jelle@jellekralt.com>",
   "license": "MIT",
@@ -17,5 +18,9 @@
     "moment": "^2.13.0",
     "pdf-text": "^0.4.0",
     "witbot": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   }
 }
