@@ -1,0 +1,9 @@
+{
+  "name": "BB-8",
+  "interaction": {
+    "social": {
+      "confirmation": "Beep-Boop!",
+      "greeting": "Hoi! :smiley:"
+    }
+  }
+}
