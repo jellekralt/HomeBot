@@ -4,7 +4,7 @@
   "description": "HomeBot is a bot for your home :)",
   "main": "index.js",
   "scripts": {
-    "run": "node index",
+    "start": "node index",
     "test": "./node_modules/mocha/bin/mocha tests/*.js"
   },
   "author": "Jelle Kralt <jelle@jellekralt.com>",

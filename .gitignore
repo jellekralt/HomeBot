@@ -4,5 +4,8 @@ node_modules/
 # Ignore config file, which contains tokens
 config.json
 
+# Logfiles
+*.log
+
 # Editor stuff
 .idea
