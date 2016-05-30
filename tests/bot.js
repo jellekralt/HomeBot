@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var path = require('path');
 var fs = require('fs');
 var chai = require('chai');
@@ -8,14 +9,22 @@ var bb8, config;
 
 describe('HomeBot', function() {
 
-    beforeEach(function() {
-        config = { slack: {token: 'foo' }, wit: {token: 'foo' }};
+    it('should store the config', function(done) {
+        options = {persona: 'bb8', slack: {token: 'bar' }, wit: {token: 'bar' }};
 
-        bb8 = new HomeBot(config);
+        bb8 = new HomeBot(options);
+
+        expect(bb8.options).to.deep.equal(options);
+
+        done();
     });
 
-    it('should store the config', function(done) {
-        expect(bb8.config).to.equal(config);
+    it('should default the persona to bb8', function(done) {
+        options = {slack: {token: 'bar' }, wit: {token: 'bar' }};
+
+        bb8 = new HomeBot(options);
+
+        expect(bb8.options).to.deep.equal(_.merge({}, options, {persona: 'bb8'}));
 
         done();
     });
