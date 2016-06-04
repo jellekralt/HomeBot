@@ -6,6 +6,7 @@ config.json
 
 # Logfiles
 *.log
+*.log.*
 
 # Editor stuff
 .idea
